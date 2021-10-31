@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <nav class="flex items-center between">
+            <div class="left flex items-center">
+                <div class="branding">
+                    <img src="Images/portfolio2.png" width="150px" alt="">
+                </div>
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="qualification.html">Qualification</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="hobbies.html">Hobbies</a>
+                    <a href="interest.html">Interest</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="profile flex items-center">
+            <div class="left flex-1">
+                <img src="Images/profile.jpeg" alt="">
+            </div>
+            <div class="right flex-1">
+                <h1><b>Farhan Akhter</b></h1>                
+                <h3>Studies at: <a href="https://kiit.ac.in/" target="_blank" style="text-decoration: none;"><span>Kalinga Institute of Technology</span></a> <br>
+                    Lives In: <a href="https://en.wikipedia.org/wiki/Bhubaneswar" target="_blank" style="text-decoration: none;"><span>Bhubaneswar, India</span></a> <br>
+                    Born on 04 March 2000 <br>
+                </h3>
+            </div>
+        </div>
+    </div>
+    </header>
+    <section class="experience">
+        <div class="container flex items-center">
+            <div class="flex-1">
+                <img src="Images/experience2.jpg" width="300px" height="350px" alt="">
+            </div>
+            <div class="flex-1">
+                <h1>Ex<span>perience</span></h1>
+                <h3>
+                    <ul>
+                        <li>Web Development <br> <br>
+                            <a href="thesparksfoundationsingapore.org" target="_blank">The Sparks Foundation<br> </a>Jun 2021 - Jul 2021 <br> <br>
+                            Built a Donation Website with a Demo Payment Gateway integration. <br></li>
+                        <li>Web Development <br> <br> <a href="https://suvenconsultants.com/" target="_blank">Suven Consultants & Technology Pvt. Ltd. <br> </a>May 2021 - May 2021 <br> <br>
+                            Built 4 web pages similar to: <br>
+                            1. Hotstar.com <br>
+                            2. Blogging page <br>
+                            3. CSS3 Animation page <br>
+                            4. Voter Registration page <br> </li>
+                    </ul>
+                </h3>
+                
+            </div>
+        </div>
+
+        <!-- ------carousel------- -->
+
+        <div class="slider-box">
+            <div id="slider">
+                <img src="Images/Sparks_Foundation.png" alt="">
+                <img src="Images/Suven.png" alt="">
+            </div>
+            <div class="indicators">
+                <span id="btn1" class="active"></span>
+                <span id="btn2"></span>
+            </div>
+        </div>
+    
+       
+        <script>
+    
+            var slide = document.getElementById("slider");
+            var btn1 = document.getElementById('btn1');
+            var btn2 = document.getElementById('btn2');
+    
+            btn1.onclick = function () {
+                slide.style.transform = "translateX(0px)";
+                btn1.classList.add('active');
+                btn2.classList.remove('active');
+                btn3.classList.remove('active');
+                btn4.classList.remive('active');
+            };
+            btn2.onclick = function () {
+                slide.style.transform = "translateX(-100%)";
+                btn1.classList.remove('active');
+                btn2.classList.add('active');
+                btn3.classList.remove('active');
+                btn4.classList.remove('active');
+            };
+    
+        </script>
+    </section>
+<footer>
+    <img src="Images/portfolio2.png" width="150px" alt="">
+    <div class="logo">
+        <a href="#"><img src="Images/fb.png" alt=""></a>
+        <a href="#"><img src="Images/insta.png" alt=""></a>
+        <a href="#"><img src="Images/linkedin.png" alt=""></a>
+    </div>
+
+    <div class="copyright">
+        Copyright &copy; 2021
+    </div>
+</footer>
+</body>
+</html>
